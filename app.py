@@ -82,7 +82,7 @@ def main():
     # Inicializamos la memoria
     with ConnectionPool(
         # Example configuration
-        conninfo='postgresql://postgres:L~6O"<bgbdlT{L0O@34.61.147.250:5432/postgres?sslmode=disable',
+        conninfo='postgresql://postgres:contra@x.x.x.x:5432/postgres?sslmode=disable',
         max_size=20,
         kwargs=connection_kwargs,
     ) as pool:
