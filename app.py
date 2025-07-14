@@ -20,10 +20,10 @@ from typing import Annotated
 
 ## datos de trazabilidad
 os.environ["LANGSMITH_ENDPOINT"]="https://api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"] = "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"
+os.environ["LANGCHAIN_API_KEY"] = "api"
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "gcpaiagent"
-os.environ["OPENAI_API_KEY"] ="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"
+os.environ["OPENAI_API_KEY"] ="api"
 
 def send_email_message(
     to_address: Annotated[str, "Recipient's email address"],
@@ -33,7 +33,7 @@ def send_email_message(
   Tool to send your response in html format to the user's email address. Include emojis in your response.
   """
   sender_email = "royerick987@gmail.com"
-  password = "dbtq wask fcks dctq" 
+  password = "x x x x" 
   #MIME instance
   msg = MIMEMultipart()
   msg['From'] = sender_email #Sender's email
@@ -60,11 +60,11 @@ def main():
     msg = request.args.get('msg')
     print(f"value: {id_agente} y {msg}")
     #datos de configuracion
-    DB_URI = 'postgresql://postgres:L~6O"<bgbdlT{L0O@34.61.147.250:5432/postgres?sslmode=disable'
+    DB_URI = 'postgresql://postgres:contra@x.x.x.x:5432/postgres?sslmode=disable'
     db_query = ElasticsearchStore(
-        es_url="http://34.16.182.210:9200",
+        es_url="http://x.x.x.x:9200",
         es_user="elastic",
-        es_password="BCQ0UvQC7yxHCXNMLoU_",
+        es_password="contra",
         index_name="nutricion_y_deporte-data",
         embedding=OpenAIEmbeddings())
 
